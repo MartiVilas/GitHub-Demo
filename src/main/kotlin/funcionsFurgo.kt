@@ -29,11 +29,22 @@ fun calcDevaluacion(pPreuFurgo: Float): Float{
     var preuFurgo = pPreuFurgo
     var divisor:Float=0.00001f
     println("Dime el kilometraje de tu vehículo porfavor")
-    var km:Int=scanner.nextInt()
-    var calculRestaPreu = preuFurgo*(divisor*km)/100
+    var km:Float=scanner.nextFloat()
+    println("Dime el kilometraje de tus ruedas porfavor")
+    var kmRuedas:Float=scanner.nextFloat()
+    preuFurgo= kmNeumatic(kmRuedas, pPreuFurgo)
+    var calculRestaPreu = preuFurgo*(divisor*km)
     var resultatRestaPreu = preuFurgo-calculRestaPreu
-    println("Ahora tu furgoneta vale $resultatRestaPreu menos que originalmente $preuFurgo")
+    println("Ahora tu furgoneta vale $resultatRestaPreu, originalmente $preuFurgo")
     return resultatRestaPreu
 }
 
+fun kmNeumatic(pKm:Float, pPreuFurgo: Float) : Float{
+    if (pKm<10000 && pKm>5000){
+        return pPreuFurgo-200f
+    } else if (pKm>10000.0f){
+        return pPreuFurgo-300.0f
+    }
+    return pPreuFurgo
 
+}
