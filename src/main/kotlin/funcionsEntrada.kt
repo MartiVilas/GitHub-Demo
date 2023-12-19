@@ -29,6 +29,20 @@ fun llegirDouble():Double {
     return num
 }
 
+fun llegirFloat():Float {
+    var scanner=Scanner(System.`in`)
+    var num:Float = 0.0f
+    var error = true
+    do {if (scanner.hasNextFloat()){
+        num=scanner.nextFloat()
+        error=false
+    }else {
+        scanner.nextLine()
+    }
+    }while (error)
+    return num
+}
+
 fun llegirLong():Long {
     var scanner=Scanner(System.`in`)
     var num:Long=0
