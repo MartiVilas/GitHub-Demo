@@ -3,7 +3,8 @@ import java.util.*
 var scanner=Scanner(System.`in`)
 
 /**
- * aques codi d'aquí es per fer les comprovacions de la furgoneta
+ * Aquest arxiu kt es el encarregat d'emagatzemar les funcions relacionades amb els cambi de preu de la furgoneta.
+ * @author Martí Vilàs Ruano
  */
 fun calcPreuFurgo():Float{
     var preuFurgo:Float=73490.0f

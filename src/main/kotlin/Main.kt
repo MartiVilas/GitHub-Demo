@@ -7,7 +7,6 @@ package org.example
  * Grand California, en caso de poner 2 te dara el precio actualizado de la versión full equip de esta.
  * @author Martí Vilàs Ruano
  * @version 1.0.2
- * @see calcPreuFurgo
  */
 fun main() {
     var preuFurgo = calcPreuFurgo()
