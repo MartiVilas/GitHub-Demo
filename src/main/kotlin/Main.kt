@@ -9,7 +9,10 @@ package org.example
  * @version 1.0.2
  */
 fun main() {
+
+    var entrada = entradaAmbAscii()
     var preuFurgo = calcPreuFurgo()
+
     var preuFurgoDevaluat = calcDevaluacion(preuFurgo)
     val portaBicis = readBoolean("La teva furgo te Portabicis? (true / false)", "Dada errònia introduida.")
 }
