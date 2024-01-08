@@ -3,8 +3,7 @@ import java.util.*
 var scanner=Scanner(System.`in`)
 
 /**
- * asdasdas
- * {@code calcPreuFurgo()}
+ * aques codi d'aquí es per fer les comprovacions de la furgoneta
  */
 fun calcPreuFurgo():Float{
     var preuFurgo:Float=73490.0f
@@ -46,5 +45,4 @@ fun kmNeumatic(pKm:Float, pPreuFurgo: Float) : Float{
         return pPreuFurgo-300.0f
     }
     return pPreuFurgo
-
 }

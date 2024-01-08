@@ -1,6 +1,18 @@
 package org.example
 import java.util.*
-fun llegirInt(pMissatgeEntrada:String, pMissatgeError1: String, pMissatgeError2: String, pMin: Int, pMax: Int ):Int {
+
+
+/**
+ * Aquest document .kt es el document destinat a les funciones de lectura d'entrada de dades.
+ * @author Martí Vilàs Ruano.
+ * @param llegirInt llegeix els números en format enter
+ * @param llegirIntMissatge llegeix els números en format enters amb missatges d'entrada i d'error.
+ * @param llegirDouble llegeix els números en format double
+ * @param llegirLong llegeix els números en format long
+ * @param llegirWord llegeix una cadena de Strings.
+ * @param llegirChar llegeix un cadena de caràcters.
+ */
+fun llegirInt():Int {
     var scanner=Scanner(System.`in`)
     var num:Int=0
     var error = true
@@ -43,7 +55,7 @@ fun llegirDouble():Double {
     return num
 }
 
-fun llegirFloat( pMissatgeEntrada: String, pMissatgeError: String):Float {
+fun llegirFloat():Float {
     var scanner=Scanner(System.`in`)
     var num:Float = 0.0f
     var error = true
