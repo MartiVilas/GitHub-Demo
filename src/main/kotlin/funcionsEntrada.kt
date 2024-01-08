@@ -116,3 +116,29 @@ fun llegirChar(pMessageIn: String, pMessageErrorDT: String, pCase: Int = -1): Ch
         }
     } while (true)
 }
+
+fun readBoolean(pMessageIn: String
+                , pMessageErrorDT: String
+): Boolean{
+
+    var outputValue: Boolean = false
+    var correctDataType: Boolean = false
+
+    do{
+        println(pMessageIn)
+        correctDataType = scanner.hasNextBoolean()
+
+        if (!correctDataType){
+            println(PURPLE_BACKGROUND_BRIGHT + "ERROR: " + pMessageErrorDT + RESET)
+        }else{
+            outputValue = scanner.nextBoolean()
+        }
+        scanner.nextLine()
+    }while(!correctDataType)
+
+    return outputValue
+}
+
+fun arropdoniment(numero: Double): Double {
+    return (Math.round(numero * 100) / 100).toDouble()
+}

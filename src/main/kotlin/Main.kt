@@ -11,4 +11,7 @@ package org.example
 fun main() {
     var preuFurgo = calcPreuFurgo()
     var preuFurgoDevaluat = calcDevaluacion(preuFurgo)
+    val tePortabicis = readBoolean("La teva furgo te Portabicis? (true / false)", "Dada errònia introduida.")
+
+    preuFurgo = portaBicis(preuFurgo,pPortaBicis)
 }
