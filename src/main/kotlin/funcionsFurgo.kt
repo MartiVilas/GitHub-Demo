@@ -48,7 +48,10 @@ fun kmNeumatic(pKm:Float, pPreuFurgo: Float) : Float{
     return pPreuFurgo
 }
 
-fun portaBicis(preuFurgo: Int, pPortaBicis:Boolean): Int{
-    return if (tePortabicis) preuFurgo + 250
-    else preuFurgo
+fun portaBicis(preuFurgo: Int, pPortaBicis:Boolean) {
+    if (pPortaBicis==true) {
+        preuFurgo + 250
+        println("Ara la teva furgo val $preuFurgo")
+    } else preuFurgo
+
 }

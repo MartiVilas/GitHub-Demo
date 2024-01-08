@@ -117,10 +117,7 @@ fun llegirChar(pMessageIn: String, pMessageErrorDT: String, pCase: Int = -1): Ch
     } while (true)
 }
 
-fun readBoolean(pMessageIn: String
-                , pMessageErrorDT: String
-): Boolean{
-
+fun readBoolean(pMessageIn: String, pMessageError: String): Boolean{
     var outputValue: Boolean = false
     var correctDataType: Boolean = false
 
@@ -129,7 +126,7 @@ fun readBoolean(pMessageIn: String
         correctDataType = scanner.hasNextBoolean()
 
         if (!correctDataType){
-            println(PURPLE_BACKGROUND_BRIGHT + "ERROR: " + pMessageErrorDT + RESET)
+            println(PURPLE_BACKGROUND_BRIGHT + "ERROR: " + pMessageError + RESET)
         }else{
             outputValue = scanner.nextBoolean()
         }
